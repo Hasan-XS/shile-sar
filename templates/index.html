@@ -1,0 +1,28 @@
+{% include 'base.html' %}
+
+{% block head %}
+<title>صفحه اصلی | گردش گری</title>
+{% endblock %}
+
+{% block content %}
+
+
+<section>
+
+
+
+    <ul>
+        {% for item in posts %}
+        <li>
+            <a href=""><h1>{{item.title}}</h1></a>
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+
+</section>
+
+
+{% endblock %}
