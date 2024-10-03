@@ -1,14 +1,15 @@
 {% include 'base.html' %}
 
 {% block head %}
-<title>صفحه اصلی | گردش گری</title>
+<title>شیل سر | {{category.name}}</title>
 {% endblock %}
 
 {% block content %}
 
 
 <section>
-    پست ها
+
+    <h1>{{category.name}}</h1>
     <ul>
         {% for item in posts %}
         <li>
