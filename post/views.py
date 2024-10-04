@@ -29,3 +29,14 @@ def posts_by_category(request, category_name):
             "category": category,
         },
     )
+
+
+def post_details_view(request, pk):
+    post = get_object_or_404(Post, id=pk)
+    return render(
+        request,
+        "post\post_details.html",
+        {
+            "post": post,
+        },
+    )

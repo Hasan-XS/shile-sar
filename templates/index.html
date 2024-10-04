@@ -12,7 +12,8 @@
     <ul>
         {% for item in posts %}
         <li>
-            <a href=""><h1>{{item.title}}</h1></a>
+            <img src="{{item.image.url}}" alt="">
+            <a href="{{item.get_absolute_url}}"><h1>{{item.title}}</h1></a>
         </li>
 
         {% endfor %}
